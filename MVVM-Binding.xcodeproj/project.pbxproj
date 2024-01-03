@@ -15,6 +15,10 @@
 		D616F9D12B45ED730014AC5A /* MVVM_BindingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9D02B45ED730014AC5A /* MVVM_BindingUITestsLaunchTests.swift */; };
 		D616F9E02B45EE2C0014AC5A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9DE2B45EE2C0014AC5A /* MainViewController.swift */; };
 		D616F9E12B45EE2C0014AC5A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D616F9DF2B45EE2C0014AC5A /* MainViewController.xib */; };
+		D616F9EB2B45F30C0014AC5A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9EA2B45F30C0014AC5A /* MainViewModel.swift */; };
+		D616F9ED2B45F65A0014AC5A /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9EC2B45F65A0014AC5A /* NetworkConstant.swift */; };
+		D616F9EF2B45F7460014AC5A /* TrendingMoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9EE2B45F7460014AC5A /* TrendingMoviesModel.swift */; };
+		D616F9F12B45F7EB0014AC5A /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9F02B45F7EB0014AC5A /* APICaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		D616F9D02B45ED730014AC5A /* MVVM_BindingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_BindingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D616F9DE2B45EE2C0014AC5A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D616F9DF2B45EE2C0014AC5A /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		D616F9EA2B45F30C0014AC5A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		D616F9EC2B45F65A0014AC5A /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		D616F9EE2B45F7460014AC5A /* TrendingMoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMoviesModel.swift; sourceTree = "<group>"; };
+		D616F9F02B45F7EB0014AC5A /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +156,7 @@
 		D616F9E32B45EFEC0014AC5A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D616F9EA2B45F30C0014AC5A /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -163,6 +172,7 @@
 		D616F9E52B45EFFE0014AC5A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D616F9EE2B45F7460014AC5A /* TrendingMoviesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +202,8 @@
 		D616F9E92B45F03F0014AC5A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				D616F9EC2B45F65A0014AC5A /* NetworkConstant.swift */,
+				D616F9F02B45F7EB0014AC5A /* APICaller.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -327,8 +339,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D616F9ED2B45F65A0014AC5A /* NetworkConstant.swift in Sources */,
+				D616F9F12B45F7EB0014AC5A /* APICaller.swift in Sources */,
+				D616F9EF2B45F7460014AC5A /* TrendingMoviesModel.swift in Sources */,
 				D616F9AE2B45ED710014AC5A /* AppDelegate.swift in Sources */,
 				D616F9E02B45EE2C0014AC5A /* MainViewController.swift in Sources */,
+				D616F9EB2B45F30C0014AC5A /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
