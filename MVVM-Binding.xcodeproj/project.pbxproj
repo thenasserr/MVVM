@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D616F9AE2B45ED710014AC5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9AD2B45ED710014AC5A /* AppDelegate.swift */; };
-		D616F9B02B45ED710014AC5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9AF2B45ED710014AC5A /* SceneDelegate.swift */; };
-		D616F9B22B45ED710014AC5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9B12B45ED710014AC5A /* ViewController.swift */; };
-		D616F9B52B45ED710014AC5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D616F9B32B45ED710014AC5A /* Main.storyboard */; };
 		D616F9B72B45ED730014AC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D616F9B62B45ED730014AC5A /* Assets.xcassets */; };
 		D616F9BA2B45ED730014AC5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D616F9B82B45ED730014AC5A /* LaunchScreen.storyboard */; };
 		D616F9C52B45ED730014AC5A /* MVVM_BindingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9C42B45ED730014AC5A /* MVVM_BindingTests.swift */; };
 		D616F9CF2B45ED730014AC5A /* MVVM_BindingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9CE2B45ED730014AC5A /* MVVM_BindingUITests.swift */; };
 		D616F9D12B45ED730014AC5A /* MVVM_BindingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9D02B45ED730014AC5A /* MVVM_BindingUITestsLaunchTests.swift */; };
+		D616F9E02B45EE2C0014AC5A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9DE2B45EE2C0014AC5A /* MainViewController.swift */; };
+		D616F9E12B45EE2C0014AC5A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D616F9DF2B45EE2C0014AC5A /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +37,6 @@
 /* Begin PBXFileReference section */
 		D616F9AA2B45ED710014AC5A /* MVVM-Binding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Binding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D616F9AD2B45ED710014AC5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D616F9AF2B45ED710014AC5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D616F9B12B45ED710014AC5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D616F9B42B45ED710014AC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D616F9B62B45ED730014AC5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D616F9B92B45ED730014AC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D616F9BB2B45ED730014AC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +45,8 @@
 		D616F9CA2B45ED730014AC5A /* MVVM-BindingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-BindingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D616F9CE2B45ED730014AC5A /* MVVM_BindingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_BindingUITests.swift; sourceTree = "<group>"; };
 		D616F9D02B45ED730014AC5A /* MVVM_BindingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_BindingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D616F9DE2B45EE2C0014AC5A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D616F9DF2B45EE2C0014AC5A /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +97,15 @@
 		D616F9AC2B45ED710014AC5A /* MVVM-Binding */ = {
 			isa = PBXGroup;
 			children = (
+				D616F9E92B45F03F0014AC5A /* Networking */,
+				D616F9E82B45F03A0014AC5A /* Extensions */,
+				D616F9E72B45F01C0014AC5A /* Resources */,
+				D616F9E62B45F0050014AC5A /* Classes */,
+				D616F9E52B45EFFE0014AC5A /* Model */,
+				D616F9E42B45EFF80014AC5A /* Controllers */,
+				D616F9E32B45EFEC0014AC5A /* ViewModel */,
+				D616F9E22B45EFE60014AC5A /* View */,
 				D616F9AD2B45ED710014AC5A /* AppDelegate.swift */,
-				D616F9AF2B45ED710014AC5A /* SceneDelegate.swift */,
-				D616F9B12B45ED710014AC5A /* ViewController.swift */,
-				D616F9B32B45ED710014AC5A /* Main.storyboard */,
-				D616F9B62B45ED730014AC5A /* Assets.xcassets */,
-				D616F9B82B45ED730014AC5A /* LaunchScreen.storyboard */,
 				D616F9BB2B45ED730014AC5A /* Info.plist */,
 			);
 			path = "MVVM-Binding";
@@ -125,6 +126,74 @@
 				D616F9D02B45ED730014AC5A /* MVVM_BindingUITestsLaunchTests.swift */,
 			);
 			path = "MVVM-BindingUITests";
+			sourceTree = "<group>";
+		};
+		D616F9DD2B45EE1C0014AC5A /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D616F9DE2B45EE2C0014AC5A /* MainViewController.swift */,
+				D616F9DF2B45EE2C0014AC5A /* MainViewController.xib */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		D616F9E22B45EFE60014AC5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D616F9B82B45ED730014AC5A /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D616F9E32B45EFEC0014AC5A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D616F9E42B45EFF80014AC5A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D616F9DD2B45EE1C0014AC5A /* MainViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D616F9E52B45EFFE0014AC5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D616F9E62B45F0050014AC5A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D616F9E72B45F01C0014AC5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D616F9B62B45ED730014AC5A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D616F9E82B45F03A0014AC5A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D616F9E92B45F03F0014AC5A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +301,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D616F9BA2B45ED730014AC5A /* LaunchScreen.storyboard in Resources */,
+				D616F9E12B45EE2C0014AC5A /* MainViewController.xib in Resources */,
 				D616F9B72B45ED730014AC5A /* Assets.xcassets in Resources */,
-				D616F9B52B45ED710014AC5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +327,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D616F9B22B45ED710014AC5A /* ViewController.swift in Sources */,
 				D616F9AE2B45ED710014AC5A /* AppDelegate.swift in Sources */,
-				D616F9B02B45ED710014AC5A /* SceneDelegate.swift in Sources */,
+				D616F9E02B45EE2C0014AC5A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +365,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D616F9B32B45ED710014AC5A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D616F9B42B45ED710014AC5A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D616F9B82B45ED730014AC5A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,9 +507,8 @@
 				INFOPLIST_FILE = "MVVM-Binding/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,9 +534,8 @@
 				INFOPLIST_FILE = "MVVM-Binding/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
