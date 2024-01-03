@@ -15,7 +15,7 @@ class MainViewController: UIViewController {
   
   //MARK: - ViewModel
   var viewModel: MainViewModel = MainViewModel()
-  var cellDataSource: [Movie] = []
+  var cellDataSource: [MovieTableCellViewModel] = []
 
   override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,6 @@ class MainViewController: UIViewController {
   //MARK: - Configure View
   func configView() {
     self.title = "Main View"
-    view.backgroundColor = .red
     setupTableView()
   }
 
@@ -82,7 +81,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
   }
 
   func registerCell() {
-    tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    tableView.register(MainMovieCell.register(), forCellReuseIdentifier: MainMovieCell.identifier)
   }
 
   func numberOfSections(in tableView: UITableView) -> Int {
@@ -94,10 +93,17 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-    let movieData = cellDataSource[indexPath.row]
-    cell.textLabel?.text = self.viewModel.getMovietitle(movie: movieData)
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: MainMovieCell.identifier, for: indexPath) as? MainMovieCell else {
+      return UITableViewCell()
+    }
+    let cellViewModel = cellDataSource[indexPath.row]
+    cell.setupCell(viewModel: cellViewModel)
+    cell.selectionStyle = .none
     return cell
+  }
+
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 150
   }
 
 }
