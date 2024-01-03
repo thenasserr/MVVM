@@ -19,6 +19,7 @@
 		D616F9ED2B45F65A0014AC5A /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9EC2B45F65A0014AC5A /* NetworkConstant.swift */; };
 		D616F9EF2B45F7460014AC5A /* TrendingMoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9EE2B45F7460014AC5A /* TrendingMoviesModel.swift */; };
 		D616F9F12B45F7EB0014AC5A /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9F02B45F7EB0014AC5A /* APICaller.swift */; };
+		D616F9F32B45FC490014AC5A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9F22B45FC490014AC5A /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		D616F9EC2B45F65A0014AC5A /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		D616F9EE2B45F7460014AC5A /* TrendingMoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMoviesModel.swift; sourceTree = "<group>"; };
 		D616F9F02B45F7EB0014AC5A /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		D616F9F22B45FC490014AC5A /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 		D616F9E62B45F0050014AC5A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D616F9F22B45FC490014AC5A /* Observable.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				D616F9ED2B45F65A0014AC5A /* NetworkConstant.swift in Sources */,
 				D616F9F12B45F7EB0014AC5A /* APICaller.swift in Sources */,
 				D616F9EF2B45F7460014AC5A /* TrendingMoviesModel.swift in Sources */,
+				D616F9F32B45FC490014AC5A /* Observable.swift in Sources */,
 				D616F9AE2B45ED710014AC5A /* AppDelegate.swift in Sources */,
 				D616F9E02B45EE2C0014AC5A /* MainViewController.swift in Sources */,
 				D616F9EB2B45F30C0014AC5A /* MainViewModel.swift in Sources */,
