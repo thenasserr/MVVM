@@ -30,7 +30,7 @@
                 </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="scG-x3-CfN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5Cr-Ne-tdJ"/>
                 <constraint firstItem="mHo-BZ-c5q" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="FLd-dS-Rbd"/>

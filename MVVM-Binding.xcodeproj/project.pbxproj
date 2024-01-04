@@ -26,6 +26,9 @@
 		D616F9FC2B460B480014AC5A /* MovieTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616F9FB2B460B480014AC5A /* MovieTableCellViewModel.swift */; };
 		D616F9FF2B460E090014AC5A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D616F9FE2B460E090014AC5A /* SDWebImage */; };
 		D616FA012B460E090014AC5A /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D616FA002B460E090014AC5A /* SDWebImageMapKit */; };
+		D616FA052B46E27B0014AC5A /* DetailsMoviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616FA032B46E27B0014AC5A /* DetailsMoviewViewController.swift */; };
+		D616FA062B46E27B0014AC5A /* DetailsMoviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D616FA042B46E27B0014AC5A /* DetailsMoviewViewController.xib */; };
+		D616FA082B46E3880014AC5A /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616FA072B46E3880014AC5A /* DetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		D616F9F62B4607410014AC5A /* MainMovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMovieCell.xib; sourceTree = "<group>"; };
 		D616F9F92B460A730014AC5A /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		D616F9FB2B460B480014AC5A /* MovieTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableCellViewModel.swift; sourceTree = "<group>"; };
+		D616FA032B46E27B0014AC5A /* DetailsMoviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMoviewViewController.swift; sourceTree = "<group>"; };
+		D616FA042B46E27B0014AC5A /* DetailsMoviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsMoviewViewController.xib; sourceTree = "<group>"; };
+		D616FA072B46E3880014AC5A /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,7 @@
 			children = (
 				D616F9EA2B45F30C0014AC5A /* MainViewModel.swift */,
 				D616F9FB2B460B480014AC5A /* MovieTableCellViewModel.swift */,
+				D616FA072B46E3880014AC5A /* DetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -180,6 +187,7 @@
 		D616F9E42B45EFF80014AC5A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D616FA022B46E2530014AC5A /* DetailsMoviewViewController */,
 				D616F9DD2B45EE1C0014AC5A /* MainViewController */,
 			);
 			path = Controllers;
@@ -233,6 +241,15 @@
 				D616F9F62B4607410014AC5A /* MainMovieCell.xib */,
 			);
 			path = MainMovieCell;
+			sourceTree = "<group>";
+		};
+		D616FA022B46E2530014AC5A /* DetailsMoviewViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D616FA032B46E27B0014AC5A /* DetailsMoviewViewController.swift */,
+				D616FA042B46E27B0014AC5A /* DetailsMoviewViewController.xib */,
+			);
+			path = DetailsMoviewViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +365,7 @@
 			files = (
 				D616F9BA2B45ED730014AC5A /* LaunchScreen.storyboard in Resources */,
 				D616F9E12B45EE2C0014AC5A /* MainViewController.xib in Resources */,
+				D616FA062B46E27B0014AC5A /* DetailsMoviewViewController.xib in Resources */,
 				D616F9B72B45ED730014AC5A /* Assets.xcassets in Resources */,
 				D616F9F82B4607410014AC5A /* MainMovieCell.xib in Resources */,
 			);
@@ -379,11 +397,13 @@
 				D616F9EF2B45F7460014AC5A /* TrendingMoviesModel.swift in Sources */,
 				D616F9F72B4607410014AC5A /* MainMovieCell.swift in Sources */,
 				D616F9FC2B460B480014AC5A /* MovieTableCellViewModel.swift in Sources */,
+				D616FA052B46E27B0014AC5A /* DetailsMoviewViewController.swift in Sources */,
 				D616F9F32B45FC490014AC5A /* Observable.swift in Sources */,
 				D616F9FA2B460A730014AC5A /* UIView+Ext.swift in Sources */,
 				D616F9AE2B45ED710014AC5A /* AppDelegate.swift in Sources */,
 				D616F9E02B45EE2C0014AC5A /* MainViewController.swift in Sources */,
 				D616F9EB2B45F30C0014AC5A /* MainViewModel.swift in Sources */,
+				D616FA082B46E3880014AC5A /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
